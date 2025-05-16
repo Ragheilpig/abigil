@@ -1,0 +1,299 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background-color: black;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a {
+  color: yellow;
+  text-decoration: none;
+ }
+ 
+    a:hover {
+      color: red;
+    }
+
+.content-section {
+    margin: 1em;
+    text-align: justify;
+    max-width: 1200px;
+    padding: 0.2rem;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 1.5em;
+    font-size: larger;
+}
+
+.section-header {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: rgb(249, 249, 88);
+  text-align: center;
+  margin: 40px 0 20px;
+  position: relative;
+  padding-bottom: 10px;
+  text-shadow: 0 0 10px rgba(255, 255, 0, 0.7);
+}
+
+.ml-logo {
+    float: right;
+    width: 220px;
+    height: auto;
+    margin: 10px 0 10px 20px;
+    border-radius: 8px;
+}
+
+.about-flex {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.about-flex p {
+    flex: 1;
+}
+
+.caption {
+    font-size: 1em;
+    color: lightgray;
+    font-style: italic;
+    margin-bottom: 20px;
+} 
+
+.heroes-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    color: white;
+}
+
+.heroes-table th,
+.heroes-table td {
+    border: 1px solid #999;
+    padding: 10px;
+    text-align: left;
+}
+
+.heroes-table th {
+    background-color: #222;
+    color: #fff;
+}
+
+.heroes-table tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.lane-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #ffff;
+    background-color: #2c3e50;
+    padding: 10px 15px;
+    margin: 30px 0 10px;
+    border-left: 6px solid yellow;
+    border-radius: 4px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.map-image {
+    background-image: url("mlmap.jpg");
+    background-color: rgba(0, 0, 0, 0.6);
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 400px;
+    width: 100%;
+}
+
+#home {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  padding-top: 80px;
+}
+
+#bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  z-index: -1;
+}
+
+.game-name {
+  position: absolute;
+  top: 35%;
+  width: 100%;
+  text-align: center;
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: white;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+  z-index: 2;
+}
+
+.layla-message {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 800px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(10px);
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.layla-message p {
+  margin: 0;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: white;
+}
+
+.layla-message strong {
+  color: yellow;
+}
+
+.pro-tips-section {
+  background-color: #111;
+  color: white;
+  padding: 60px 20px;
+}
+
+.pro-tip-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 60px;
+  flex-wrap: wrap;
+}
+
+.pro-tip-item.reverse {
+  flex-direction: row-reverse;
+}
+
+.pro-img {
+  width: 280px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.6);
+}
+
+.pro-text {
+  max-width: 500px;
+}
+
+.pro-text h3 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  color: #f9f9f9;
+}
+
+.player-title,
+.player-role
+.player-team {
+  font-size: 0.95rem;
+  color: lightgray;
+  margin-bottom: 10px;
+}
+
+.player-tip {
+  font-size: 1.05rem;
+  font-style: italic;
+  line-height: 1.6;
+  color: lightgrey;
+}
+
+.savage-moments {
+font-size: 30px;
+text-align: center;
+font-weight: bold;
+color: white;
+}
+
+.Moments {
+    font-size: 1em;
+            color: lightgray;
+            font-style: italic;
+            margin-bottom: 20px;
+}
+
+
+.savage-moments2 {
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+    color: #ffff;
+    }
+
+
+.Moments2 {
+        font-size: 1em;
+                color: lightgray;
+                font-style: italic;
+                margin-bottom: 20px;
+}
+
+.navbar {
+  background-color: none;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  text-shadow: black;
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  padding: 0 1em;
+  position: relative;
+}
+
+.nav-links li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #FFD700;
+}
